@@ -2,7 +2,7 @@ import React from 'react';
 
 const QuestionList = ({ question, questionNo, options, handleClick, currentAnswer, nextQuestion }) => {
     console.log(question);
-    
+
     return (
         <div className="container mt-5">
             <div className="row">
@@ -16,7 +16,7 @@ const QuestionList = ({ question, questionNo, options, handleClick, currentAnswe
                                 {
                                     options.map((option, index) => (
                                         <li key={index} onClick={() => handleClick(option)} className={`list-group-item ${currentAnswer === option ? 'list-group-item-success' : ''}`}>
-                                            {option}
+                                            {index + 1}. {option}
                                         </li>
                                     ))
                                 }
