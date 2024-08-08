@@ -1,6 +1,6 @@
 import React from 'react';
 
-const QuestionList = ({ question, questionNo, options, handleClick, currentAnswer, nextQuestion }) => {
+const QuestionList = ({ question, options, handleClick, currentAnswer, nextQuestion }) => {
     console.log(question);
 
     return (
@@ -9,7 +9,7 @@ const QuestionList = ({ question, questionNo, options, handleClick, currentAnswe
                 <div className="col-md-6 offset-md-3">
                     <div className="card">
                         <div className="card-header">
-                            <h2>Queastion: {questionNo}{question}</h2>
+                            <h2>Queastion:-{question}</h2>
                         </div>
                         <div className="card-body">
                             <ul className="list-group">

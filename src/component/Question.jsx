@@ -54,7 +54,7 @@ function Question() {
     return (
         <>
             {currentQuestion < questions.length ? <div>
-                <QuestionList question={questions[currentQuestion].question} questionNO={questions[currentQuestion].questionNo} options={questions[currentQuestion].options} handleClick={handleClick} currentAnswer={currentAnswer} nextQuestion={nextQuestion} />
+                <QuestionList question={questions[currentQuestion].question} options={questions[currentQuestion].options} handleClick={handleClick} currentAnswer={currentAnswer} nextQuestion={nextQuestion} />
             </div> : <div className="alert alert-success mt-5" role="alert">
                 <h3>Thankyou for attending Quiz</h3>
                 <h3>Your Score is {score}/{questions.length} </h3>
