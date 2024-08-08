@@ -27,6 +27,12 @@ function Question() {
             options: ["1", "4", "6", "8"],
             answer: '1'
         },
+        {
+            questionNo: 4,
+            question: "What is 2 x 6",
+            options: ["12", "14", "6", "2"],
+            answer: '1'
+        },
     ]
 
 
